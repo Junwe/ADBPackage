@@ -9,6 +9,12 @@ namespace WindowsFormsApp1
 {
     class CMDManager
     {
+        public static CMDManager Instance;
+
+        public CMDManager()
+        {
+            Instance = this;
+        }
         public string SetCommandLine(string command,bool CheckMsgBox = false)
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();

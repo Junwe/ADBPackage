@@ -8,6 +8,7 @@ namespace WindowsFormsApp1
 {
     class ADBPackage
     {
+
         public string[] GetDeviceList(string result)
         {
             string[] split = { "List of devices attached" };
@@ -20,7 +21,6 @@ namespace WindowsFormsApp1
 
         public void RegDevice(string port)
         {
-
         }
     }
 }
