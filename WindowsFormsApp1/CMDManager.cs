@@ -35,9 +35,11 @@ namespace WindowsFormsApp1
             process.StandardInput.WriteLine(command);
             process.StandardInput.Close();
 
+            string[] split = { command };
             string result = process.StandardOutput.ReadToEnd();
-            
-            if(CheckMsgBox)
+            string[] reulsts = result.Split(split, StringSplitOptions.None);
+
+            if (CheckMsgBox)
                 MessageBox.Show(result);
 
             process.Close();

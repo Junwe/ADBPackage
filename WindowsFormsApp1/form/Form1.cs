@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
 
         private void btn_device_list(object sender, EventArgs e)
         {
-            tb_device_list.Text = CMDManager.Instance.SetCommandLine("adb devices");
+            tb_device_list.Text = _adbPackage.GetDeviceList();
 
 
         }
