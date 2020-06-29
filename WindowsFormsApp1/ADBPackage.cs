@@ -17,5 +17,10 @@ namespace WindowsFormsApp1
 
             return device_list;
         }
+
+        public void RegDevice(string port)
+        {
+
+        }
     }
 }
